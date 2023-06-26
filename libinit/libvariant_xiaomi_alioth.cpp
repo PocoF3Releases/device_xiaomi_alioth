@@ -11,6 +11,7 @@ static const variant_info aliothin_info = {
     .sku_value = "",
 
     .mod_device = "alioth_global",
+    .name = "alioth_global",
     .brand = "Mi",
     .device = "aliothin",
     .marketname = "Mi 11X",
@@ -25,6 +26,7 @@ static const variant_info alioth_global_info = {
     .sku_value = "",
 
     .mod_device = "alioth_global",
+    .name = "alioth_global",
     .brand = "POCO",
     .device = "alioth",
     .marketname = "POCO F3",
@@ -39,6 +41,7 @@ static const variant_info alioth_info = {
     .sku_value = "",
 
     .mod_device = "alioth_global",
+    .name = "alioth_global",
     .brand = "Redmi",
     .device = "alioth",
     .marketname = "Redmi K40",
