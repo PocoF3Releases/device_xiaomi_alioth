@@ -13,6 +13,8 @@ BUILD_WITH_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_MIUI_CAMERA := true
+TARGET_INCLUDES_MIUI_CAMERA := true
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Build Type Flags
