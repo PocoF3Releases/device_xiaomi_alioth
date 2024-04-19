@@ -36,6 +36,37 @@ vendor.audio_hal.period_multiplier=2
 ro.vendor.display.paneltype=2
 vendor.display.defer_fps_frame_count=2
 
+# DisplayFeature
+persist.vendor.dc_backlight.enable=false
+persist.vendor.dc_backlight.threshold=440
+persist.vendor.dfps.level=60
+persist.vendor.df.extcolor.proc=0
+persist.vendor.dfps.level=60
+persist.vendor.fod.modified.dc_status=false
+persist.vendor.light.bit.switch=true
+persist.vendor.power.dfps.level=0
+ro.vendor.all_modes.colorpick_adjust=true
+ro.vendor.bcbc.enable=true
+ro.vendor.cabc.enable=false
+ro.vendor.colorpick_adjust=true
+ro.vendor.df.effect.conflict=1
+ro.vendor.dfps.enable=false
+ro.vendor.display.default_fps=60
+ro.vendor.display.type=oled
+ro.vendor.fod.dimlayer.enable=true
+ro.vendor.gcp.enable=1
+ro.vendor.hbm_backlight.enable=true
+ro.vendor.histogram.enable=true
+ro.vendor.smart_dfps.enable=true
+ro.vendor.soft_backlight.enable=true
+ro.vendor.sre=1
+ro.vendor.standard.video.enable=true
+ro.vendor.video.decode.only=false
+ro.vendor.video_box.version=2
+ro.vendor.whitepoint_calibration_enable=false
+ro.vendor.xiaomi.bl.poll=true
+vendor.hbm.enable=true
+
 # TouchFeature
 ro.vendor.touchfeature.type=43
 
