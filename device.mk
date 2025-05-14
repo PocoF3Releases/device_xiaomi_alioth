@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_alioth)
 
 # Miui Camera
-include vendor/xiaomi/camera/miuicamera.mk
+include device/xiaomi/camera/miuicamera.mk
 
 # Miui Camera STLicense
 PRODUCT_COPY_FILES += \
