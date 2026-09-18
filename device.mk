@@ -63,3 +63,12 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
+
+# Optional read-only Thermal HAL. Keep Mi thermal control and Pixel powerhint.
+# The initial reporting-severity mapping must be validated before release.
+ifeq ($(TARGET_ENABLE_ALIOTH_THERMAL_OBSERVER),true)
+ifeq ($(TARGET_USE_QTI_THERMAL_SERVICE),true)
+$(error Select only one Thermal HAL; the Alioth observer accompanies mi_thermald)
+endif
+PRODUCT_PACKAGES += android.hardware.thermal-service.alioth
+endif

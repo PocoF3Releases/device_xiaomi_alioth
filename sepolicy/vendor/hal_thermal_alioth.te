@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: Apache-2.0
+type hal_thermal_alioth, domain;
+type hal_thermal_alioth_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_thermal_alioth)
+hal_server_domain(hal_thermal_alioth, hal_thermal)
+
+# Read sensor values, thermal-cooling state, and the matching frequency tables.
+# No writes, thermal-policy IPC, root UID, or DAC bypass capability.
+allow hal_thermal_alioth sysfs:dir r_dir_perms;
+allow hal_thermal_alioth sysfs:lnk_file r_file_perms;
+allow hal_thermal_alioth sysfs_thermal:dir r_dir_perms;
+allow hal_thermal_alioth sysfs_thermal:lnk_file r_file_perms;
+allow hal_thermal_alioth sysfs_thermal:file { open read getattr };
+allow hal_thermal_alioth sysfs_devices_system_cpu:dir r_dir_perms;
+allow hal_thermal_alioth sysfs_devices_system_cpu:lnk_file r_file_perms;
+allow hal_thermal_alioth sysfs_devices_system_cpu:file { open read getattr };
+allow hal_thermal_alioth vendor_sysfs_kgsl:dir r_dir_perms;
+allow hal_thermal_alioth vendor_sysfs_kgsl:lnk_file r_file_perms;
+allow hal_thermal_alioth vendor_sysfs_kgsl:file { open read getattr };
+allow hal_thermal_alioth sysfs_battery_supply:dir r_dir_perms;
+allow hal_thermal_alioth sysfs_battery_supply:lnk_file r_file_perms;
+allow hal_thermal_alioth sysfs_battery_supply:file { open read getattr };
