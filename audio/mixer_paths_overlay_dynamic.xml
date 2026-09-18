@@ -40,7 +40,13 @@
     </path>
 
     <path name="voice-headphones">
-        <path name="headphones" />
+        <!-- Inline headphones: overlay paths must not nest. -->
+        <ctl name="COMP1 Switch" value="0" />
+        <ctl name="COMP2 Switch" value="0" />
+        <ctl name="HPHL Volume" value="20" />
+        <ctl name="HPHR Volume" value="20" />
+        <ctl name="RX_RX0 Digital Volume" value="72" />
+        <ctl name="RX_RX1 Digital Volume" value="72" />
         <ctl name="COMP1 Switch" value="0" />
         <ctl name="COMP2 Switch" value="0" />
         <ctl name="HPHL Volume" value="16" />
