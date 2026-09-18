@@ -1,1 +1,3 @@
 /vendor/bin/hw/android\.hardware\.health-service\.alioth u:object_r:hal_health_default_exec:s0
+
+/vendor/bin/hw/android\.hardware\.thermal-service\.alioth u:object_r:hal_thermal_alioth_exec:s0
