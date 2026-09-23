@@ -1,6 +1,0 @@
-# SPDX-License-Identifier: Apache-2.0
-service vendor.thermal-hal-alioth /vendor/bin/hw/android.hardware.thermal-service.alioth
-    class hal
-    user system
-    group system
-    interface aidl android.hardware.thermal.IThermal/default
