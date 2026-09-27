@@ -35,6 +35,8 @@ part of these commands. Keep release-signing keys outside public repositories.
 - Keep Android 16's native screen recorder and normal 60 FPS/AVC 5.1 settings.
   The independent maximum-FPS backport follows the active display mode and codec
   limits when selected, without requiring recording blur suppression.
+- Enable the separate recording blur policy. The Keep blur effects switch restores
+  user choice; this feature can be omitted independently of maximum-FPS recording.
 - Android 16 already reports charger limits from charger nodes and does not
   contain the newer DMA-BUF iterator path. Those Android 17 fixes are unnecessary.
 

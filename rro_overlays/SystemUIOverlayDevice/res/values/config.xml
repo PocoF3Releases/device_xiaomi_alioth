@@ -59,4 +59,6 @@
 
     <!-- Expose codec-limited maximum-FPS recording independently of blur policy. -->
     <bool name="config_screenRecorderHighRefreshRate">true</bool>
+    <!-- Recording blur policy is independently selectable from maximum FPS. -->
+    <bool name="config_screenRecorderDisableBlur">true</bool>
 </resources>
