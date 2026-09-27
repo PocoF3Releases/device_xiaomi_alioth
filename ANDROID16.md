@@ -32,8 +32,9 @@ part of these commands. Keep release-signing keys outside public repositories.
   `device/lineage/sepolicy/libion` include.
 - Android 16 already uses legacy virtual-display frame pacing and guarded
   buffer abandonment. No Android 17 SurfaceFlinger backport is necessary.
-- Keep Android 16's native screen recorder and existing 60 FPS/AVC 5.1 settings;
-  Android 17-only high-refresh/blur UI options are not part of this port.
+- Keep Android 16's native screen recorder and normal 60 FPS/AVC 5.1 settings.
+  The independent maximum-FPS backport follows the active display mode and codec
+  limits when selected, without requiring recording blur suppression.
 - Android 16 already reports charger limits from charger nodes and does not
   contain the newer DMA-BUF iterator path. Those Android 17 fixes are unnecessary.
 
