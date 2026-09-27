@@ -50,4 +50,3 @@ persist.vendor.fingerprint.sensor_location=1080|965|115|local:463094673663848972
 persist.vendor.fingerprint.type=side
 
 # SurfaceFlinger
-ro.surface_flinger.use_legacy_vds_refresh_pacing=true

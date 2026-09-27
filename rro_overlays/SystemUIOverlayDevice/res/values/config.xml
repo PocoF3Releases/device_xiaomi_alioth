@@ -57,11 +57,4 @@
     -->
     <string name="config_screenRecorderAVCProfileLevel" translatable="false">5.1</string>
 
-    <!-- Whether the internal screen recorder may use the codec's full supported frame rate
-         and request the selected rate from its virtual display. -->
-    <bool name="config_screenRecorderHighRefreshRate">true</bool>
-
-    <!-- Whether to suppress expensive SystemUI cross-window blur while the built-in screen
-         recorder is active. Normal blur behavior is restored when recording stops. -->
-    <bool name="config_screenRecorderDisableBlur">true</bool>
 </resources>

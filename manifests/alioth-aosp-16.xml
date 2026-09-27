@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest>
+  <remote name="pocof3-a16" fetch="https://github.com/PocoF3Releases/" />
+  <remote name="pocof3-camera" fetch="https://gitlab.com/johnmart19/" />
+  <remove-project name="device_xiaomi_alioth" />
+  <project path="device/xiaomi/alioth" name="device_xiaomi_alioth" remote="pocof3-a16" revision="aosp-16" />
+  <project path="device/xiaomi/sm8250-common" name="device_xiaomi_sm8250-common" remote="pocof3-a16" revision="aosp-16" />
+  <project path="device/xiaomi/camera" name="device_xiaomi_camera" remote="pocof3-a16" revision="aosp-16" />
+  <project path="vendor/xiaomi/alioth" name="vendor_xiaomi_alioth" remote="pocof3-a16" revision="aosp-16" />
+  <project path="vendor/xiaomi/sm8250-common" name="vendor_xiaomi_sm8250-common" remote="pocof3-a16" revision="aosp-16" />
+  <project path="vendor/xiaomi/camera" name="vendor_xiaomi_camera" remote="pocof3-camera" revision="aosp-16" />
+  <project path="kernel/xiaomi/sm8250" name="kernel_xiaomi_sm8250" remote="pocof3-a16" revision="aosp-16" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pocof3-a16" revision="aosp-16" />
+  <remove-project name="frameworks_base" />
+  <project path="frameworks/base" name="frameworks_base" remote="pocof3-a16" revision="aosp-16" />
+  <remove-project name="frameworks_av" />
+  <project path="frameworks/av" name="frameworks_av" remote="pocof3-a16" revision="aosp-16" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" remote="pocof3-a16" revision="aosp-16" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" remote="pocof3-a16" revision="aosp-16" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom-caf_sm8250_media" remote="pocof3-a16" revision="aosp-16" />
+  <remove-project name="LineageOS/android_hardware_nxp_nfc" />
+  <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="pocof3-a16" revision="aosp-16" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_usb" />
+  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="pocof3-a16" revision="aosp-16" />
+  <remove-project name="system_core" />
+  <project path="system/core" name="system_core" remote="pocof3-a16" revision="aosp-16" />
+</manifest>
