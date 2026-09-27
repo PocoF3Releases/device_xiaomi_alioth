@@ -57,4 +57,6 @@
     -->
     <string name="config_screenRecorderAVCProfileLevel" translatable="false">5.1</string>
 
+    <!-- Expose codec-limited maximum-FPS recording independently of blur policy. -->
+    <bool name="config_screenRecorderHighRefreshRate">true</bool>
 </resources>
