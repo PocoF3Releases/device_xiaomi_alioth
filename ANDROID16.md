@@ -43,3 +43,26 @@ part of these commands. Keep release-signing keys outside public repositories.
 The accepted camera mode limits are unchanged: main-camera 4K is supported;
 ultrawide 4K remains guarded and ultrawide 1080p60 is not a claim of true 60 FPS.
 Android 17 runtime acceptance does not establish Android 16 runtime validation.
+
+## Source compatibility audit
+
+- All 147 resource names/types across the 15 device/common overlay directories
+  exist in their Android 16 targets. All 15 resource directories compile with
+  AAPT2; the unused Aperture overlay was checked but remains excluded from the
+  product. Wi-Fi overrides belong to `WifiCustomization`.
+- All 1,427 resolved `PRODUCT_COPY_FILES` sources exist. Required device-owned
+  Soong namespaces and SELinux include directories exist. Optional empty paths
+  inherited from upstream Lineage/QCOM includes were not turned into device
+  dependencies or replaced with copied Android 17 policy.
+- Rootdir imports, service executable install rules and task-profile names were
+  checked. Undefined service controls were removed in `sm8250-common`.
+- Device/app Android permission names exist in the Android 16 framework.
+  Parsed 439 XML files across device and Xiaomi hardware integration.
+- Wrapped-key encryption, filesystem checkpoints and the existing BPF version
+  override have consumers in this Android 16 platform. Preserve their existing
+  hardware integration; these checks do not justify new performance tuning.
+
+These are source, resource-compilation and init-parser checks. They do not prove
+final APK overlay resolution, VINTF compatibility of the assembled images, a
+complete SELinux policy build, or Android 16 runtime behavior. Verify those with
+the next **user** build and boot; no full ROM build was started for this audit.
