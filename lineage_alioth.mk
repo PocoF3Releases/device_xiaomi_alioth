@@ -8,6 +8,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Keep Pixel Launcher and full Google Search without the full GMS app bundle.
+TARGET_USES_MINI_GAPPS := true
+
 # Inherit some common lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
