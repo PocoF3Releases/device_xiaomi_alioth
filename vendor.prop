@@ -9,6 +9,7 @@ ro.vendor.audio.feature.spatial=2
 ro.vendor.audio.gain.support=true
 ro.vendor.audio.karaok.support=true
 ro.vendor.audio.misound.bluetooth.enable=true
+ro.vendor.audio.misound.preserve_on_move=true
 ro.vendor.audio.ns.support=false
 ro.vendor.audio.sfx.audiovisual=false
 ro.vendor.audio.soundtrigger.appdefine.cnn.level=35
